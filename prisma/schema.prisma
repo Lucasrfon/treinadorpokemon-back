@@ -24,7 +24,12 @@ model Pokemon {
   color Color
 }
 
-model Card {
+model EventCard {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model ItemCard {
   id   Int    @id @default(autoincrement())
   name String
 }
