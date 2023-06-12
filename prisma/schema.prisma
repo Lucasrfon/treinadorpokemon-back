@@ -19,9 +19,12 @@ enum Color {
 }
 
 model Pokemon {
-  id     Int      @id @default(autoincrement())
-  name   String   @unique
-  color  Color
-  
-  @@map("pokemons")
+  id    Int    @id @default(autoincrement())
+  name  String @unique
+  color Color
+}
+
+model Card {
+  id   Int    @id @default(autoincrement())
+  name String
 }
