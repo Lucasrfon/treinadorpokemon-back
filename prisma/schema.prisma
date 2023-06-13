@@ -10,18 +10,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum Color {
-  PINK
-  GREEN
-  BLUE
-  RED
-  YELLOW
-}
-
 model Pokemon {
   id    Int    @id @default(autoincrement())
   name  String @unique
-  color Color
+  color String
 }
 
 model EventCard {
@@ -33,3 +25,4 @@ model ItemCard {
   id   Int    @id @default(autoincrement())
   name String
 }
+
